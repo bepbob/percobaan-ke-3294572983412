@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mode</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <div class="c">
+        <button id="btn">
+            
+        <p id="btnT">SLEEP MODE</p>
+        <div class="box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+             </svg>
+        </div>      
+        </button>
+        </div>
+
+        <h1 id="h1">REST BOYS AND FORGET HIM</h1>
+    <!-- javascript -->
+
+    <script>
+      var btn = document.getElementById('btn');
+var btnT = document.getElementById('btnT');
+const a = document.querySelectorAll('html')
+
+
+const b = document.querySelector('#btn')
+b.addEventListener('click' , function(){
+    btnT.innerHTML = 'SLEEP ON'
+    btn.classList.add("active")
+    for(let i = 0; i < a.length; i++){
+a[i].style.backgroundColor = 'black';
+    
+} 
+})
+
+    const c = document.querySelector('#btn')
+        b.addEventListener('click' , function(){
+            const h1 = document.querySelector('h1#h1')
+            
+                h1.style.color = 'orange'
+            
+        })
+    
+
+
+
+// btn.onclick = function(){
+//     btnT.innerHTML = "Dark ON";
+//     btn.classList.add("active");
+// }           
+
+    </script>
+
+</body>
+
+</html>
